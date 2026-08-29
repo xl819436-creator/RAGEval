@@ -1,0 +1,10 @@
+{"id":"q1","query":"load_jsonl"}
+{"id":"q2","query":"MockProvider"}
+{"id":"q3","query":"如何计算余弦相似度"}
+{"id":"q4","query":"exact_match 判断"}
+{"id":"q5","query":"FixedChunker"}
+{"id":"q6","query":"dataset_hash"}
+{"id":"q7","query":"重试 429"}
+{"id":"q8","query":"token 成本"}
+{"id":"q9","query":"AsyncClient"}
+{"id":"q10","query":"评测报告"}
