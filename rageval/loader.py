@@ -38,7 +38,7 @@ def build_manifest(corpus_dir: str, source_url: str, commit_sha: str, license_na
     records = scan_corpus(Path(corpus_dir))
     return {
         "source_url": source_url,      # 来源仓库地址
-        "commit_sha": commit_sha,      # 代码版本指纹（2.3 抄的那个）
+        "commit_sha": commit_sha,      # 代码版本指纹
         "license": license_name,       # 许可协议
         "file_count": len(records),    # 文件数
         "files": records,              # 全部记录
