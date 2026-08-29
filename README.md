@@ -7,7 +7,7 @@ RAGEval 是一个从最小可复现链路学习 RAG（检索增强生成）评�
 - **语料扫描**：递归扫描指定目录，只收录 `.py` / `.md` 文件，跳过 `.git`、`venv`、`__pycache__`、`.idea`、`node_modules`
 - **内容指纹**：为每个文件计算 SHA-256 `content_hash`，文件内容改动一个字哈希即变，可追溯语料是否被篡改
 - **语料清单**：`corpus_manifest.json` 记录来源仓库 URL、commit SHA、许可协议、文件总数与全部文件内容（含相对路径、语言、哈希）
-- **文本向量**：`BagOfWords` 词袋向量器（零依赖 TF 向量，`embedding.py`），将来可无缝替换为真实 Embedding 模型
+- **文本向量**：`BagOfWords` 词袋向量器（零依赖 TF 向量，`embeddings.py`），将来可无缝替换为真实 Embedding 模型
 - **余弦相似度**：`cosine_similarity`（`cosine.py`），用 3 个手工向量演示——相同向量相似度为 1，垂直向量为 0
 
 ## 语料来源
@@ -30,7 +30,7 @@ python rageval/loader.py
 python rageval/cosine.py
 
 # 3. 词袋向量：把一段文本变成向量
-python -c "from rageval.embedding import BagOfWords; b = BagOfWords(); b.fit(['rag eval']); print(b.embed('rag eval'))"
+python -c "from rageval.embeddings import BagOfWords; b = BagOfWords(); b.fit(['rag eval']); print(b.embed('rag eval'))"
 ```
 
 ## 项目结构
@@ -40,7 +40,7 @@ RAGEval/
 ├── rageval/
 │   ├── __init__.py
 │   ├── loader.py       # 语料扫描 + content_hash + manifest 生成
-│   ├── embedding.py    # 词袋向量（零依赖）
+│   ├── embeddings.py   # 词袋向量（零依赖）
 │   └── cosine.py       # 余弦相似度（手工向量演示）
 ├── corpus_manifest.json  # 语料清单（来源、commit SHA、许可、文件与哈希）
 ├── notes/                # 学习记录（day28.md、day28_github.md）

@@ -1,0 +1,31 @@
+# IDE
+.idea/
+
+# Python 缓存与构建
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+.conda/
+
+# 密钥与环境变量
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# 本地数据产物
+*.db
+*.sqlite
+*.sqlite3
+outputs/
+
+# 系统文件
+.DS_Store
+Thumbs.db
