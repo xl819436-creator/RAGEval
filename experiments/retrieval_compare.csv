@@ -1,0 +1,31 @@
+query_id,query,category,retriever,hit_rank,hit,top1_file,top1_score
+q1,load_jsonl,函数名,vector,3,1,dataset_version.py,0.4
+q1,load_jsonl,函数名,bm25,3,1,dataset_version.py,6.180329
+q1,load_jsonl,函数名,rrf,3,1,dataset_version.py,6.180329
+q2,dataset_hash,函数名,vector,1,1,dataset_version.py,0.25724787771376323
+q2,dataset_hash,函数名,bm25,1,1,dataset_version.py,5.656761
+q2,dataset_hash,函数名,rrf,1,1,dataset_version.py,5.656761
+q3,calculate_cost,函数名,vector,1,1,cost.py,0.06851887098275317
+q3,calculate_cost,函数名,bm25,1,1,cost.py,3.71578
+q3,calculate_cost,函数名,rrf,1,1,cost.py,3.71578
+q4,DatasetFormatError,异常名,vector,1,1,loader.py,0.5
+q4,DatasetFormatError,异常名,bm25,1,1,loader.py,5.965931
+q4,DatasetFormatError,异常名,rrf,1,1,loader.py,5.965931
+q5,TimeoutException,异常名,vector,1,1,async_deepseek.py,0.04181210050035454
+q5,TimeoutException,异常名,bm25,1,1,async_deepseek.py,1.820768
+q5,TimeoutException,异常名,rrf,1,1,async_deepseek.py,1.820768
+q6,ValueError,异常名,vector,0,0,job_state_machine.py,0.25607375986579195
+q6,ValueError,异常名,bm25,0,0,job_state_machine.py,2.39209
+q6,ValueError,异常名,rrf,0,0,job_state_machine.py,2.39209
+q7,如何计算一次模型调用的成本,自然语言,vector,10,1,async_deepseek.py,0.0
+q7,如何计算一次模型调用的成本,自然语言,bm25,10,1,async_deepseek.py,0.0
+q7,如何计算一次模型调用的成本,自然语言,rrf,10,1,async_deepseek.py,0.0
+q8,遇到 429 限流应该重试吗,自然语言,vector,0,0,llm_provider.py,0.14433756729740646
+q8,遇到 429 限流应该重试吗,自然语言,bm25,0,0,llm_provider.py,3.766202
+q8,遇到 429 限流应该重试吗,自然语言,rrf,0,0,llm_provider.py,3.766202
+q9,数据集的哈希是怎么算的,自然语言,vector,0,0,async_deepseek.py,0.0
+q9,数据集的哈希是怎么算的,自然语言,bm25,0,0,async_deepseek.py,0.0
+q9,数据集的哈希是怎么算的,自然语言,rrf,0,0,async_deepseek.py,0.0
+q10,异步调用 DeepSeek 用什么客户端,自然语言,vector,6,1,llm_config.py,0.2822162605150792
+q10,异步调用 DeepSeek 用什么客户端,自然语言,bm25,6,1,llm_config.py,4.788627
+q10,异步调用 DeepSeek 用什么客户端,自然语言,rrf,6,1,llm_config.py,4.788627
