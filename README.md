@@ -51,3 +51,21 @@ RAGEval/
 
 - 当前向量为词袋 TF，不包含语义；后续接入真实 Embedding 时只需替换 `embed(text)` 的实现
 - 语料固定为 EvalHub 仓库（L3 语料固定），保证可追溯、可复现
+
+## 实验命令
+
+消融实验（Day 34：分块 × 检索 × 重排，7 组，每次只改一个变量）：
+
+```powershell
+# 在 RAGEval 项目根目录运行
+D:\Annaconda\envs\evalhub-py311\python.exe scripts\ablation_runner.py
+```
+
+- 固定使用 `data/rag_evalset_v1.jsonl`（30 条，其中 27 条可答参与指标）
+- 原始结果输出到 `raw_results/ablation_*.json`，完整报告见 `reports/ablation.md`
+
+## 已知限制
+
+- **词袋向量（BagOfWords）**：分词只保留 `[a-z0-9_]`，中文与标点被丢弃，纯中文或抽象语义问句检索会失效（查询向量为空 → 全 0 分或假阳性命中）；教学 MVP 用它演示完整链路，正式场景应换真实 Embedding 模型
+- **MockReranker**：重排器为规则/占位实现，只演示"重排改变排序"这一机制，不代表真实模型重排效果
+- **Fixed 分块与评测标注耦合**：评测集按 AST 行号标注相关块，Fixed 分块边界不同导致无法精确命中（消融中 Fixed 三组指标全 0）；换分块策略时必须重新标注评测集

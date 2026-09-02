@@ -1,0 +1,12 @@
+{
+  "name": "fixed_rrf",
+  "chunker": "FixedChunker",
+  "retriever": "rrf",
+  "rerank": false,
+  "recall_at_5": 0.0,
+  "mrr": 0.0,
+  "ndcg_at_5": 0.0,
+  "p95_ms": 24.84,
+  "chunk_count": 349,
+  "evaluated_queries": 27
+}

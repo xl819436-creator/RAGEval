@@ -1,0 +1,12 @@
+{
+  "name": "ast_rrf_rerank",
+  "chunker": "PythonASTChunker",
+  "retriever": "rrf",
+  "rerank": true,
+  "recall_at_5": 0.6111,
+  "mrr": 0.3747,
+  "ndcg_at_5": 0.4339,
+  "p95_ms": 5.97,
+  "chunk_count": 117,
+  "evaluated_queries": 27
+}

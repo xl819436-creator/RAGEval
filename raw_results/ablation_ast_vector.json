@@ -1,0 +1,12 @@
+{
+  "name": "ast_vector",
+  "chunker": "PythonASTChunker",
+  "retriever": "vector",
+  "rerank": false,
+  "recall_at_5": 0.6111,
+  "mrr": 0.3272,
+  "ndcg_at_5": 0.3979,
+  "p95_ms": 5.49,
+  "chunk_count": 117,
+  "evaluated_queries": 27
+}
