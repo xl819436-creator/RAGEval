@@ -1,0 +1,10 @@
+{"id":"q1","category":"函数名","query":"load_jsonl","expected_file":"loader.py"}
+{"id":"q2","category":"函数名","query":"dataset_hash","expected_file":"dataset_version.py"}
+{"id":"q3","category":"函数名","query":"calculate_cost","expected_file":"cost.py"}
+{"id":"q4","category":"异常名","query":"DatasetFormatError","expected_file":"loader.py"}
+{"id":"q5","category":"异常名","query":"TimeoutException","expected_file":"async_deepseek.py"}
+{"id":"q6","category":"异常名","query":"ValueError","expected_file":"retry_policy.py"}
+{"id":"q7","category":"自然语言","query":"如何计算一次模型调用的成本","expected_file":"cost.py"}
+{"id":"q8","category":"自然语言","query":"遇到 429 限流应该重试吗","expected_file":"retry_policy.py"}
+{"id":"q9","category":"自然语言","query":"数据集的哈希是怎么算的","expected_file":"dataset_version.py"}
+{"id":"q10","category":"自然语言","query":"异步调用 DeepSeek 用什么客户端","expected_file":"async_deepseek.py"}
