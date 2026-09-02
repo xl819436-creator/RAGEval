@@ -1,0 +1,30 @@
+{"id":"e001","question":"哪个函数负责计算一次模型调用的成本？","relevant_chunk_ids":["cost.py:17-45"],"answerable":true,"category":"location"}
+{"id":"e002","question":"load_jsonl 函数定义在哪个文件？","relevant_chunk_ids":["loader.py:13-91"],"answerable":true,"category":"location"}
+{"id":"e003","question":"数据集哈希 dataset_hash 是怎么计算的？","relevant_chunk_ids":["dataset_version.py:56-59"],"answerable":true,"category":"explanation"}
+{"id":"e004","question":"LLMConfig 配置模型包含哪些字段？","relevant_chunk_ids":["llm_config.py:10-21"],"answerable":true,"category":"config"}
+{"id":"e005","question":"MockProvider 支持哪几种模拟行为？","relevant_chunk_ids":["provider.py:21-83"],"answerable":true,"category":"explanation"}
+{"id":"e006","question":"HTTP 429 状态码应该重试吗？","relevant_chunk_ids":["retry_policy.py:18-20"],"answerable":true,"category":"explanation"}
+{"id":"e007","question":"RetryPolicy 的指数退避策略是怎么工作的？","relevant_chunk_ids":["retry_policy.py:36-55"],"answerable":true,"category":"explanation"}
+{"id":"e008","question":"所有模型 Provider 的统一接口在哪里定义？","relevant_chunk_ids":["provider.py:7-18","llm_provider.py:22-31"],"answerable":true,"category":"relation"}
+{"id":"e009","question":"ProviderFactory.create 的作用是什么？","relevant_chunk_ids":["llm_provider.py:105-111"],"answerable":true,"category":"explanation"}
+{"id":"e010","question":"TokenUsage 记录哪三个 token 数字？","relevant_chunk_ids":["schemas.py:32-64"],"answerable":true,"category":"explanation"}
+{"id":"e011","question":"健康检查接口在哪个模块实现？","relevant_chunk_ids":["health.py:8-14"],"answerable":true,"category":"location"}
+{"id":"e012","question":"run_pool 接收哪些参数启动 worker 池？","relevant_chunk_ids":["worker_pool.py:147-176"],"answerable":true,"category":"explanation"}
+{"id":"e013","question":"怎么用命令行运行一次评测？","relevant_chunk_ids":["cli.py:81-103"],"answerable":true,"category":"runtime"}
+{"id":"e014","question":"map_deepseek_response 这个函数做什么？","relevant_chunk_ids":["deepseek.py:12-43"],"answerable":true,"category":"explanation"}
+{"id":"e015","question":"extract_json_object 遇到非法 JSON 会怎样？","relevant_chunk_ids":["deepseek.py:46-56"],"answerable":true,"category":"explanation"}
+{"id":"e016","question":"exact_match 用来判断什么？","relevant_chunk_ids":["evaluator.py:10-16"],"answerable":true,"category":"explanation"}
+{"id":"e017","question":"aggregate 会聚合哪些评测指标？","relevant_chunk_ids":["metrics.py:20-37"],"answerable":true,"category":"explanation"}
+{"id":"e018","question":"RetryPolicy 默认最多重试几次？","relevant_chunk_ids":["retry_policy.py:36-55"],"answerable":true,"category":"config"}
+{"id":"e019","question":"状态机执行非法迁移会怎样？","relevant_chunk_ids":["job_state_machine.py:22-29"],"answerable":true,"category":"explanation"}
+{"id":"e020","question":"run_job 如何保证局部失败不扩散到整个任务？","relevant_chunk_ids":["eval_runner.py:28-60"],"answerable":true,"category":"relation"}
+{"id":"e021","question":"生成的 Markdown 报告包含哪些章节？","relevant_chunk_ids":["report_builder.py:6-39"],"answerable":true,"category":"explanation"}
+{"id":"e022","question":"带重试的 DeepSeek Provider 在哪个类里实现？","relevant_chunk_ids":["async_deepseek.py:23-110"],"answerable":true,"category":"location"}
+{"id":"e023","question":"percentile 对空列表返回什么？","relevant_chunk_ids":["metrics.py:8-17"],"answerable":true,"category":"explanation"}
+{"id":"e024","question":"execute_prompt 在调用 Provider 之前先做什么？","relevant_chunk_ids":["service.py:5-32"],"answerable":true,"category":"relation"}
+{"id":"e025","question":"如何通过工厂创建并使用一个 Provider？","relevant_chunk_ids":["llm_provider.py:95-115"],"answerable":true,"category":"runtime"}
+{"id":"e026","question":"LLMResponse 约定成功和失败的判断标准是什么？","relevant_chunk_ids":["schemas.py:105-164"],"answerable":true,"category":"explanation"}
+{"id":"e027","question":"DeepSeekProvider 调用哪家 API 并怎么转换响应？","relevant_chunk_ids":["llm_provider.py:34-67"],"answerable":true,"category":"relation"}
+{"id":"e028","question":"如何在 Kubernetes 上部署 EvalHub？","relevant_chunk_ids":[],"answerable":false,"category":"out-of-scope"}
+{"id":"e029","question":"EvalHub 支持中文分词器配置吗？","relevant_chunk_ids":[],"answerable":false,"category":"out-of-scope"}
+{"id":"e030","question":"这个项目用什么向量数据库做语义检索？","relevant_chunk_ids":[],"answerable":false,"category":"out-of-scope"}
